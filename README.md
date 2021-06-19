@@ -32,22 +32,48 @@ This python program is a made for drawing images using canny edge detection and 
 
 <h2 id="reqs">Libraries Used</h2>
 
- - Pynput
  - OpenCV
+ - Pynput
  - Time
  - Keyboard
 
-`Pynput` is used in order to control the mouse of the user for drawing as well as for monitoring the starting position and ending position of the drawing canvas. `OpenCV` is used to detect the edges of an image as well as to determine the points that will be used to draw the image. `Time` is an optional aspect of the program in order to slow down the drawing process of the image as well as to lessen any errors that may come due to the speed of the drawing. `Keyboard` is a library used to listen for the escape button in the keyboard in order to exit the drawing process in the event that an issue arises.
+`OpenCV` is used to detect the edges of an image as well as to determine the points that will be used to draw the image. Upon initial implementation, two methods were tested as to how the points of the image would be obtained, the first through the use of contours and the second through edge detection.
+
+When it came to simple images, the difference between the two methods (Contour on the middle and Canny edge detection on the far right) were seemingly negligible as seen below:
+<p align="center">
+   <img width="200" src="https://raw.githubusercontent.com/tyrone890123/Drawing-Printer/main/Assets/Screenshot%202021-06-19%20183937.png"> 
+&nbsp;&nbsp;&nbsp;&nbsp;
+ <img width="200" src="https://raw.githubusercontent.com/tyrone890123/Drawing-Printer/main/Assets/Screenshot%202021-06-19%20183927.png"> 
+ &nbsp;&nbsp;&nbsp;&nbsp;
+ <img width="200" src="https://raw.githubusercontent.com/tyrone890123/Drawing-Printer/main/Assets/Screenshot%202021-06-19%20183855.png"> 
+  </p>
+When these images were drawn in paint the output were as follows:
+<p align="center">
+   <img width="400" src="https://raw.githubusercontent.com/tyrone890123/Drawing-Printer/main/Assets/Screenshot%202021-06-19%20183326.png"> 
+  </p>
+When it came to complex images however, the difference became apparent in that the canny edge detection method was able to capture more details from the image; thus, this method was chosen (Contour on the middle and Canny edge detection on the far right) :
+  <p align="center">
+   <img width="150" src="https://qph.fs.quoracdn.net/main-qimg-bd2dad722786a6a8a7b42350f0428def"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;
+   <img width="150" src="https://raw.githubusercontent.com/tyrone890123/Drawing-Printer/main/Assets/Screenshot%202021-06-19%20182118.png"> 
+      &nbsp;&nbsp;&nbsp;&nbsp;
+   <img width="150" src="https://raw.githubusercontent.com/tyrone890123/Drawing-Printer/main/Assets/Screenshot%202021-06-19%20181849.png"> 
+  </p>
+</p>
+This yielded the following output when drawn in paint:
+
+<p align="center">
+   <img width="400" src="https://raw.githubusercontent.com/tyrone890123/Drawing-Printer/main/Assets/Screenshot%202021-06-19%20182955.png"> 
+  </p>
+
+`Pynput` was used in order to control the mouse of the user for drawing as well as for monitoring the starting position and ending position of the drawing canvas. 
+`Time` is an optional aspect of the program in order to slow down the drawing process of the image as well as to lessen any errors that may come due to the speed of the drawing. 
+`Keyboard` is a library used to listen for the escape button in the keyboard in order to exit the drawing process in the event that an issue arises.
 
 
 <h2 id="setup">Setup</h2>
 
-Download the project above and open jupyter notebook.
 
-<p align="center">
-   <img width="600" src="https://raw.githubusercontent.com/tyrone890123/Drawing-Printer/main/Assets/Screenshot%202021-06-19%20171619.png"> 
-  </p>
-  
 Once the application is up and running the first procedure is to run the libraries and the second cell of code. this cell would prompt the user for 2 inputs the first being the starting point of the canvas and the second being the ending point of the canvas. this is to calibrate the scale of the drawing for whatever canvas this program is being used for
 
 <p align="center">

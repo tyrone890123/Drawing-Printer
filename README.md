@@ -68,6 +68,11 @@ This yielded the following output when drawn in paint:
 
 `Pynput` was used in order to control the mouse of the user for drawing as well as for monitoring the starting position and ending position of the drawing canvas. 
 `Time` is an optional aspect of the program in order to slow down the drawing process of the image as well as to lessen any errors that may come due to the speed of the drawing. 
+  <p align="center">
+   <img width="300" src="https://raw.githubusercontent.com/tyrone890123/Drawing-Printer/main/Assets/fastdemo.gif"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;
+   <img width="300" src="https://raw.githubusercontent.com/tyrone890123/Drawing-Printer/main/Assets/slow.gif"> 
+  </p>
 `Keyboard` is a library used to listen for the escape button in the keyboard in order to exit the drawing process in the event that an issue arises.
 
 

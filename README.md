@@ -45,22 +45,25 @@ This python program is a made for drawing images using canny edge detection and 
 Download the project above and open jupyter notebook.
 
 <p align="center">
-   <img width="600" src=""> 
+   <img width="600" src="https://raw.githubusercontent.com/tyrone890123/Drawing-Printer/main/Assets/Screenshot%202021-06-19%20171619.png"> 
   </p>
   
 Once the application is up and running the first procedure is to run the libraries and the second cell of code. this cell would prompt the user for 2 inputs the first being the starting point of the canvas and the second being the ending point of the canvas. this is to calibrate the scale of the drawing for whatever canvas this program is being used for
 
 <p align="center">
-   <img width="200" src=""> 
-&nbsp;&nbsp;&nbsp;&nbsp;
- <img width="200" src=""> 
+   <img width="600" src="https://raw.githubusercontent.com/tyrone890123/Drawing-Printer/main/Assets/Screenshot%202021-06-19%20171811.png"> 
   </p>
   
 The third step is to input the location of the image to be drawn, **Note** that this program has trouble drawing complex images and is better suited for cartoons and line art. Once the program is ran,  an initial mouse press is required(this is used to go to the tab of the drawing canvas) and the mouse will return to the staring position that was done in the initial press in cell 2.
 
 <p align="center">
-   <img width="200" src=""> 
+   <img width="500" src="https://raw.githubusercontent.com/tyrone890123/Drawing-Printer/main/Assets/Screenshot%202021-06-19%20171837.png"> 
+&nbsp;&nbsp;&nbsp;&nbsp;
+ <img width="200" src="https://raw.githubusercontent.com/tyrone890123/Drawing-Printer/main/Assets/For%20Testing.jpg"> 
+ &nbsp;&nbsp;&nbsp;&nbsp;
+ <img width="600" src="https://raw.githubusercontent.com/tyrone890123/Drawing-Printer/main/Assets/Screenshot%202021-06-19%20171956.png"> 
   </p>
+  
   
 The speed of the drawing can be adjusted in the `time.sleep()`. If there is an error in the execution of the program in cell 3, pressing the escape button on the keyboard would stop the drawing process.
   
